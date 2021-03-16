@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/authNumberFragment">
+
+    <fragment
+        android:id="@+id/authNumberFragment"
+        android:name="com.chyngyz.verifymolbulak.ui.fragments.authenticationByNumberFragment.AuthNumberFragment"
+        android:label="auth_number_fragment"
+        tools:layout="@layout/auth_number_fragment" >
+        <action
+            android:id="@+id/action_authNumberFragment_to_gapContactInfoFragment"
+            app:destination="@id/gapContactInfoFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right"
+            app:popExitAnim="@anim/fragment_fast_out_extra_slow_in" />
+    </fragment>
+    <fragment
+        android:id="@+id/gapContactInfoFragment"
+        android:name="com.chyngyz.verifymolbulak.ui.fragments.gap_full_contact_fragment.GapContactInfoFragment"
+        android:label="gap_contact_info_fragment"
+        tools:layout="@layout/gap_contact_info_fragment" >
+        <action
+            android:id="@+id/action_gapContactInfoFragment_to_succedFragment"
+            app:destination="@id/succedFragment"
+            app:enterAnim="@anim/fragment_fade_enter"
+            app:exitAnim="@anim/fragment_fade_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/succedFragment"
+        android:name="com.chyngyz.verifymolbulak.ui.fragments.CongratulationsFragment.SuccedFragment"
+        android:label="fragment_succed"
+        tools:layout="@layout/fragment_succed" />
+</navigation>

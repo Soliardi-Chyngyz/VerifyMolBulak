@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        tools:context="ui.fragments.gap_full_contact_fragment.GapContactInfoFragment"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <TextView
+            style="@style/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal"
+            android:text="Регистрация"
+            android:textStyle="bold" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="#F6F6F6"
+            app:cardCornerRadius="6dp"
+            app:strokeColor="@android:color/darker_gray"
+            app:strokeWidth="2px">
+
+            <EditText
+                android:id="@+id/reg_edit_name"
+                style="@style/main_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="true"
+                android:drawablePadding="4dp"
+                android:drawableTint="@android:color/darker_gray"
+                android:focusable="true"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#F6F6F6"
+            app:cardCornerRadius="6dp"
+            app:strokeColor="@android:color/darker_gray"
+            app:strokeWidth="2px">
+
+            <EditText
+                android:id="@+id/reg_edit_phone_number"
+                style="@style/main_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="true"
+                android:drawablePadding="4dp"
+                android:drawableTint="@android:color/darker_gray"
+                android:focusable="true"
+                android:hint="@string/phone2"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#F6F6F6"
+            app:cardCornerRadius="6dp"
+            app:strokeColor="@android:color/darker_gray"
+            app:strokeWidth="2px">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/reg_edit_password"
+                    style="@style/main_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@android:color/darker_gray"
+                    android:focusable="true"
+                    android:hint="Выберите пароль"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="16dp"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/reg_show_password"
+                    style="@style/main_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="11dp"
+                    android:padding="5dp"
+                    android:text="Показать"
+                    android:textColor="@color/yellow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/reg_edit_password"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#F6F6F6"
+            app:cardCornerRadius="6dp"
+            app:strokeColor="@android:color/darker_gray"
+            app:strokeWidth="2px">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/reg_edit_password_confirm"
+                    style="@style/main_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:clickable="true"
+                    android:drawablePadding="4dp"
+                    android:drawableTint="@android:color/darker_gray"
+                    android:focusable="true"
+                    android:hint="Повторите пароль"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:padding="16dp"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/reg_edit_show_password_2"
+                    style="@style/main_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="11dp"
+                    android:padding="5dp"
+                    android:text="Показать"
+                    android:textColor="@color/yellow"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/reg_edit_password_confirm"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#F6F6F6"
+            app:cardCornerRadius="6dp"
+            app:strokeColor="@android:color/darker_gray"
+            app:strokeWidth="2px">
+
+            <Spinner
+                android:id="@+id/reg_edit_choose_question"
+                style="@style/SpinnerTextViewItem"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:clickable="true"
+                android:gravity="center|center_vertical"
+                android:ellipsize="marquee"
+                android:layout_gravity="center_vertical"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#F6F6F6"
+            app:cardCornerRadius="6dp"
+            app:strokeColor="@android:color/darker_gray"
+            app:strokeWidth="2px">
+
+            <EditText
+                android:id="@+id/reg_edit_answer"
+                style="@style/main_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:clickable="true"
+                android:drawablePadding="4dp"
+                android:drawableTint="@android:color/darker_gray"
+                android:focusable="true"
+                android:hint="Ответ на секретный вопрос"
+                android:maxLines="1"
+                android:padding="16dp"
+                android:textColorHint="@android:color/darker_gray"
+                android:textStyle="bold" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/view"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@android:color/darker_gray"
+                app:strokeWidth="1px">
+
+                <View
+                    android:id="@+id/view_confirm"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:background="#F6F6F6"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintDimensionRatio="7dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/view_1"
+                style="@style/main_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="Я согласен с"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/view"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/view_2"
+                style="@style/main_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" условиями "
+                android:textColor="@color/yellow"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/view_1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/view_3"
+                style="@style/main_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="обработки персональных данных"
+                android:textSize="11sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/view_2"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/reg_btn_registration"
+            style="@style/btn_style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="38dp"
+            android:background="@drawable/button_corners"
+            android:text="Зарегистрироваться" />
+
+        <TextView
+            style="@style/main_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:padding="5dp"
+            android:text="Уже зарегестрированны?"
+            android:textColor="@color/yellow"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
